@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <title>snooooooop</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <marquee><img src="Snoop Dogg-pics.jpg" alt="snoop" id="snoopface"/></marquee>
+  <audio id="soundsofsnoop" src="snoopbyte.wav" preload="auto">
+  <script>
+    var snoop = document.getElementById("soundsofsnoop");
+    snoop.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+    snoop.play();
+  </script>
+
+
+</body>
